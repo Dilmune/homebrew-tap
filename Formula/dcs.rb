@@ -10,16 +10,16 @@ class Dcs < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dilmune/dcs/releases/download/v3.6.0/dcs_darwin_amd64.tar.gz"
-      sha256 "6e99503956672772b371502e6584ce8c3e2938d9ea68a667c5843d0b5ac0689d"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_darwin_amd64.tar.gz"
+      sha256 "b7eba7f592cca9eb02052e62726a2adb8b5e83348478889326874f41ec78b4a3"
 
       define_method(:install) do
         bin.install "dcs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dilmune/dcs/releases/download/v3.6.0/dcs_darwin_arm64.tar.gz"
-      sha256 "fac73e9aabe615b9e5d1f7cb400010857ff15ec07d1cde43af368d0d33e8d7b7"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_darwin_arm64.tar.gz"
+      sha256 "e5fbdd1bfe3270c0565c9bae6df4c1a443904334f05dc5881fdfe5d1cd2c1f15"
 
       define_method(:install) do
         bin.install "dcs"
@@ -29,15 +29,15 @@ class Dcs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dilmune/dcs/releases/download/v3.6.0/dcs_linux_amd64.tar.gz"
-      sha256 "e4ccfc15c26272820dd916251b0c04bb76d55a9f0336a26dac65f3372f77d6a7"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_linux_amd64.tar.gz"
+      sha256 "ac5d75591abed84e0218c0ff01604e58c79087b5cdedf6eaf00cff2ce81e5d3c"
       define_method(:install) do
         bin.install "dcs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dilmune/dcs/releases/download/v3.6.0/dcs_linux_arm64.tar.gz"
-      sha256 "6123576484c0d8f79ae380c0a42b2fe45256c009aa285fd0c0235fc57a3fc082"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_linux_arm64.tar.gz"
+      sha256 "d42ea27f00d8834e94d5b98163f605c3eb986d6f718b8499bc5fe65ecfb3bd15"
       define_method(:install) do
         bin.install "dcs"
       end
