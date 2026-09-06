@@ -5,21 +5,21 @@
 class Dcs < Formula
   desc "CLI for Dilmune Cloud Services"
   homepage "https://dilmune.com"
-  version "3.6.0"
+  version "3.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_darwin_amd64.tar.gz"
-      sha256 "b7eba7f592cca9eb02052e62726a2adb8b5e83348478889326874f41ec78b4a3"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.7.0/dcs_darwin_amd64.tar.gz"
+      sha256 "b45aaba1a6e5cae70f54eb2b1d7a434939957cb906c18053b6cc3a7fd558202d"
 
       define_method(:install) do
         bin.install "dcs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_darwin_arm64.tar.gz"
-      sha256 "e5fbdd1bfe3270c0565c9bae6df4c1a443904334f05dc5881fdfe5d1cd2c1f15"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.7.0/dcs_darwin_arm64.tar.gz"
+      sha256 "f6b641f0b302408d2a8d9203b992b2a8632c1f955e2341f4adeb35afeeaae51a"
 
       define_method(:install) do
         bin.install "dcs"
@@ -29,15 +29,15 @@ class Dcs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_linux_amd64.tar.gz"
-      sha256 "ac5d75591abed84e0218c0ff01604e58c79087b5cdedf6eaf00cff2ce81e5d3c"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.7.0/dcs_linux_amd64.tar.gz"
+      sha256 "1117430fa631b29b586328ae34b703a7f062fb5ae4b08610e0a38de5ac352a02"
       define_method(:install) do
         bin.install "dcs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.6.0/dcs_linux_arm64.tar.gz"
-      sha256 "d42ea27f00d8834e94d5b98163f605c3eb986d6f718b8499bc5fe65ecfb3bd15"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.7.0/dcs_linux_arm64.tar.gz"
+      sha256 "7509e8117b8a293a4f712b7ac6586fa902942c0120846fe05f09cee9c40d9eef"
       define_method(:install) do
         bin.install "dcs"
       end
