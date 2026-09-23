@@ -1,24 +1,24 @@
 # typed: false
 # frozen_string_literal: true
 
-# Generated from the published v3.8.2 checksums. DO NOT EDIT.
+# Generated from the published v3.8.3 checksums. DO NOT EDIT.
 class Dcs < Formula
   desc "CLI for Dilmune Cloud Services"
   homepage "https://dilmune.com"
-  version "3.8.2"
+  version "3.8.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.2/dcs_darwin_amd64.tar.gz"
-      sha256 "e0c90d4ab5f891353a6de9e37789b080617e6be48f9ee1337269ce3c9c5883f9"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.3/dcs_darwin_amd64.tar.gz"
+      sha256 "64ddbaa41e0f98c6e7f9e57e331063ec395768c01a008eabdfc91994d0a44f77"
       define_method(:install) do
         bin.install "dcs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.2/dcs_darwin_arm64.tar.gz"
-      sha256 "e99fe789631d0aa6a18208b3e3fd25a4a04fdffaaa0ab5fdc853192c5d9119ed"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.3/dcs_darwin_arm64.tar.gz"
+      sha256 "a277a32882387d61052db2baf7c3c5ea0e7829003c40fe0313f86996b5ffa3bd"
       define_method(:install) do
         bin.install "dcs"
       end
@@ -27,15 +27,15 @@ class Dcs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.2/dcs_linux_amd64.tar.gz"
-      sha256 "ca7f6e706a9fbf7fe5677ad460a89f88c2e73358d82e14b4120f9bd2f2dd3a43"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.3/dcs_linux_amd64.tar.gz"
+      sha256 "289c0f8a784bbc1f4d4d52bbab70a7d9878f161f1f70c35afbe8092b9e54a893"
       define_method(:install) do
         bin.install "dcs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.2/dcs_linux_arm64.tar.gz"
-      sha256 "183c1d61db98116237dfb652b1546bcf4849d21e07b22d8cfa036c3bb1d1529e"
+      url "https://github.com/Dilmune/dcs-cli/releases/download/v3.8.3/dcs_linux_arm64.tar.gz"
+      sha256 "ccb7824523e1252ce71c97169de0ce39b219999b8b13fbb5c4a1eb6c4f6e7611"
       define_method(:install) do
         bin.install "dcs"
       end
